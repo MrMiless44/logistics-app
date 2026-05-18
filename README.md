@@ -24,6 +24,8 @@
 | TMS Portal      | [tms.logisticsx.app](https://tms.logisticsx.app)           |
 | Customer Portal | [customer.logisticsx.app](https://customer.logisticsx.app) |
 
+> **Demo safety**: The live demo uses shared test data and Stripe test keys. Do not enter real customer, driver, shipment, carrier, billing, company, or payment information.
+
 | Role       | Email                  | Password   |
 | ---------- | ---------------------- | ---------- |
 | Owner      | `owner@test.com`       | Test12345# |
@@ -32,7 +34,7 @@
 | Driver     | `driver1@test.com`     | Test12345# |
 | Customer   | `customer1@test.com`   | Test12345# |
 
-[All test credentials](docs/getting-started/test-credentials.md)
+[All test credentials](docs/getting-started/test-credentials.md) · [Demo credential safety](docs/getting-started/demo-credential-safety.md)
 
 ## Who it's for
 
@@ -117,44 +119,3 @@ Architecture: DDD + CQRS with MediatR, multi-tenant with one database per compan
 |                     Fleet                      |                      Reports                       |                           Invoicing                           |
 | :--------------------------------------------: | :------------------------------------------------: | :-----------------------------------------------------------: |
 | ![Fleet](docs/images/tms-portal/tms-fleet.png) | ![Reports](docs/images/tms-portal/tms-reports.png) | ![Invoices](docs/images/tms-portal/tms-invoice-dashboard.png) |
-
-### Customer Portal
-
-|                            Dashboard                             |                        Shipment Details                        |
-| :--------------------------------------------------------------: | :------------------------------------------------------------: |
-| ![Dashboard](docs/images/customer-portal/customer-dashboard.png) | ![Shipment](docs/images/customer-portal/customer-shipment.png) |
-
-</details>
-
-[All screenshots](docs/screenshots.md)
-
-## Documentation
-
-| Guide                                                    | Description                                                   |
-| -------------------------------------------------------- | ------------------------------------------------------------- |
-| [Features](docs/features.md)                             | Complete feature list                                         |
-| [Getting Started](docs/getting-started/prerequisites.md) | Prerequisites, local setup, Docker                            |
-| [Architecture](docs/architecture/overview.md)            | System design, patterns, domain model                         |
-| [API Reference](docs/api/overview.md)                    | Authentication, endpoints, webhooks                           |
-| [Deployment](docs/deployment/overview.md)                | VPS setup, Docker Compose, Nginx, SSL                         |
-| [AI Dispatch](docs/ai-dispatch.md)                       | Agentic dispatcher architecture & API                         |
-| [MCP Server](docs/mcp-server.md)                         | Connect Claude Desktop, Cursor & other AI tools to your fleet |
-| [Development](docs/development/backend-guide.md)         | Backend, Angular, mobile guides                               |
-
-## Contributing
-
-Pull requests welcome. Fork, branch off `main`, open a PR. See the [development guides](docs/development/backend-guide.md) for coding conventions.
-
-## License
-
-[Functional Source License, Version 1.1, Apache 2.0 Future License][fsl] (FSL-1.1-Apache-2.0).
-
-Free for internal use, non-commercial use, and professional services. Commercial use that competes with LogisticsX (e.g. offering it as a hosted TMS) is not permitted during the 2-year change period. The license auto-converts to **Apache 2.0** on the second anniversary of each release. For earlier commercial licensing, contact the author.
-
-## Contact
-
-Created by **Sukhrob Ilyosbekov**
-
-- Email: [suxrobgm@gmail.com](mailto:suxrobgm@gmail.com)
-- LinkedIn: [linkedin.com/in/suxrobgm](https://www.linkedin.com/in/suxrobgm)
-- Telegram: [@suxrobgm](https://t.me/suxrobgm)
