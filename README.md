@@ -1,4 +1,4 @@
-﻿# LogisticsX
+# LogisticsX
 
 [![Build Status](https://github.com/suxrobgm/logistics-app/actions/workflows/build.yml/badge.svg)](https://github.com/suxrobgm/logistics-app/actions/workflows/build.yml)
 [![Deploy](https://github.com/suxrobGM/logistics-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/suxrobGM/logistics-app/actions/workflows/deploy.yml)
@@ -24,6 +24,8 @@
 | TMS Portal      | [tms.logisticsx.app](https://tms.logisticsx.app)           |
 | Customer Portal | [customer.logisticsx.app](https://customer.logisticsx.app) |
 
+> **Demo safety**: The live demo uses shared test data and Stripe test keys. Do not enter real customer, driver, shipment, carrier, billing, company, or payment information.
+
 | Role       | Email                  | Password   |
 | ---------- | ---------------------- | ---------- |
 | Owner      | `owner@test.com`       | Test12345# |
@@ -32,7 +34,7 @@
 | Driver     | `driver1@test.com`     | Test12345# |
 | Customer   | `customer1@test.com`   | Test12345# |
 
-[All test credentials](docs/getting-started/test-credentials.md)
+[All test credentials](docs/getting-started/test-credentials.md) · [Demo credential safety](docs/getting-started/demo-credential-safety.md)
 
 ## Who it's for
 
