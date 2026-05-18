@@ -7,6 +7,10 @@ Default accounts available after seeding the database.
 A live demo is available at [https://tms.logisticsx.app](https://tms.logisticsx.app)
 
 > **Warning**: The demo uses test Stripe keys. Do not enter real payment information.
+>
+> **Shared demo data**: Do not enter real customer, driver, shipment, carrier, billing, or company data. Demo data may be visible to other users and may be reset without notice.
+
+For public-demo safety expectations, see [Demo Credential Safety Review](demo-credential-safety.md).
 
 ## Account Credentials
 
@@ -17,6 +21,7 @@ A live demo is available at [https://tms.logisticsx.app](https://tms.logisticsx.
 | **Manager** | manager1@test.com | Test12345# | Office App |
 | **Dispatcher** | dispatcher1@test.com | Test12345# | Office App |
 | **Driver** | driver1@test.com | Test12345# | Driver Mobile App |
+| **Customer** | customer1@test.com | Test12345# | Customer Portal |
 
 ## Role Permissions
 
@@ -59,20 +64,27 @@ A live demo is available at [https://tms.logisticsx.app](https://tms.logisticsx.
 - Upload documents (POD, BOL)
 - Share GPS location
 
+### Customer (Customer Portal Only)
+
+- Track shipments
+- View shipment status
+- Download documents
+- View and pay invoices through test-mode payment flows
+
 ## Application Access Matrix
 
-| Feature | Super Admin | Owner | Manager | Dispatcher | Driver |
-|---------|:-----------:|:-----:|:-------:|:----------:|:------:|
-| Tenant Management | X | | | | |
-| User Management | X | X | | | |
-| Load Management | | X | X | X | View |
-| Customer Management | | X | X | | |
-| Invoice Management | | X | X | View | |
-| Driver Management | | X | X | | |
-| GPS Tracking | | X | X | X | Send |
-| Analytics Dashboard | X | X | X | | |
-| Payroll | | X | View | | |
-| Documents | | X | X | X | Upload |
+| Feature | Super Admin | Owner | Manager | Dispatcher | Driver | Customer |
+|---------|:-----------:|:-----:|:-------:|:----------:|:------:|:--------:|
+| Tenant Management | X | | | | | |
+| User Management | X | X | | | | |
+| Load Management | | X | X | X | View | Track |
+| Customer Management | | X | X | | | |
+| Invoice Management | | X | X | View | | View/Pay |
+| Driver Management | | X | X | | | |
+| GPS Tracking | | X | X | X | Send | View |
+| Analytics Dashboard | X | X | X | | | |
+| Payroll | | X | View | | | |
+| Documents | | X | X | X | Upload | Download |
 
 ## Test Tenant
 
