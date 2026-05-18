@@ -32,8 +32,11 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Restore backend dependencies
-        run: dotnet restore
+      - name: Restore Web API dependencies
+        run: dotnet restore ${{ env.PRESENTATION_PROJECTS_DIR }}/Logistics.API/Logistics.API.csproj
+
+      - name: Restore Identity Server dependencies
+        run: dotnet restore ${{ env.PRESENTATION_PROJECTS_DIR }}/Logistics.IdentityServer/Logistics.IdentityServer.csproj
 
       - name: Build Web API
         run: dotnet build ${{ env.PRESENTATION_PROJECTS_DIR }}/Logistics.API/Logistics.API.csproj --configuration ${{ env.DOTNET_CONFIGURATION }} --no-restore
